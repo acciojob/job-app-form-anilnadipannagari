@@ -7,19 +7,27 @@
 </head>
 
 <body>
-<form  action="mail to:ani.l.ap.1112@gmail.com" method="post" >
-<label for="name"">Name* : </label>
-       <input type="text" required name="name" id="name" placeholder="Enter your Name"><br><br>
+  <form  action="mailto:ani.l.ap.1112@gmail.com" method="post" >
+     
+    <!-- name -->
+       <label for="name"">Name* : </label>
+       <input type="text" required id="name" placeholder="Enter your Name"><br><br>
 
-<label for="email">Email* :</label>
-    <input type="email" required name="email" id="email" placeholder="Enter your Email Id"> <br><br>
 
-<label for="gender" id="gender">Gender* : </label>
-    <input type="radio" name="gender" id="gender">Male 
-    <input type="radio" name="gender" id="gender">Female
-    <input type="radio" name="gender" id="gender">Other <br><br>
+     <!-- Email -->
+     <label for="email">Email* :</label>
+     <input type="email" required name="email" id="email" placeholder="Enter your Email Id"> <br><br>
+     
+     
+      <!-- gender -->
+     <div>
+        <label for="gender" aria-required="true">Gender*</label>
+        <input type="radio" >Male
+        <input type="radio">Female
+        <input type="radio">other
+     </div>
 		
-<label for="laptop">Laptop Brands :</label>
+     <label for="laptop">Laptop Brands :</label>
 		 <select name="laptop" id="laptop">
          <option value="Apple">Apple</option>
          <option value="Asus">Asus</option>
